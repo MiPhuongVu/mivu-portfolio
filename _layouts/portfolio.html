@@ -6,12 +6,12 @@ layout: default
 
 <div class="grid-container">
     
-    {{ for post in site.posts }}
-    <img src="{{site.baseurl}}//assets/img/{{page.img}}" alt="" class="image">
+    {% for post in site.posts %}
+    <img src="{{site.baseurl}}/assets/img/{{post.img}}" alt="" class="image">
 
     <div class="overlay">
-        <div class="text">{{ page.title }}</div>
+        <div class="text">{{ post.title }}</div>
     </div>
-    {{ endfor }}
+    {% endfor %}
 
 </div>
