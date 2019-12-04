@@ -3,3 +3,18 @@ layout: portfolio
 title: portfolio
 ---
 
+<div class="port-container">
+
+<div class="grid-container">
+    
+    {% for post in site.posts %}
+    <img src="{{site.baseurl}}/assets/img/{{post.img}}" alt="" class="image">
+
+    <div class="overlay">
+        <div class="text">{{ post.title }}</div>
+    </div>
+    {% endfor %}
+
+</div>
+
+</div>
